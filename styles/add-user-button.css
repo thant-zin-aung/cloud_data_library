@@ -1,0 +1,121 @@
+.explore-button {
+    width: 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    transition: all .15s ease;
+    margin-top: 30px;
+  }
+  
+  .explore-button::before,
+  .explore-button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid black;
+    transition: all .15s ease;
+  }
+  
+  .explore-button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .explore-button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .explore-button:active,
+  .explore-button:focus {
+    outline: none;
+  }
+  
+  .explore-button:active::before,
+  .explore-button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .explore-button:active::before {
+    top: 3px;
+  }
+  
+  .explore-button:active::after {
+    bottom: 3px;
+  }
+  
+  .explore-button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .explore-button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: black;
+  }
+  
+  .explore-button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    transition: all .2s ease;
+  }
+  
+  .explore-button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #06DB8D;
+    transform: skew(-15deg);
+    transition: all .5s ease;
+  }
+  
+  .explore-button_text {
+    position: relative;
+  }
+  
+  .explore-button:hover {
+    color: #0f1923;
+  }
+  
+  .explore-button:hover .explore-button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .explore-button:hover .explore-button_lg::after {
+    background-color: #06DB8D;
+  }
+  

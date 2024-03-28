@@ -1,0 +1,139 @@
+html,* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.title-wrapper {
+    width: 100%;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.storage-wrapper {
+    margin: 20px 0;
+    padding: 0 12px;
+}
+.storage-wrapper .sub-title-wrapper,
+.app-setting-wrapper .sub-title-wrapper
+{
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+.storage-statistic-wrapper {
+    width: 100%;
+    height: 100px;
+    border-radius: 15px;
+    background-color: #D7F8ED;
+    overflow: hidden;
+    margin-bottom: 15px;
+    position: relative;
+}
+.cloud-storage {
+    background-color: #EFE4FC;
+}
+.storage-statistic-wrapper .progress-bar {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    transition: all 5s;
+}
+.php-progress {
+    background-color: #76D8B7;
+}
+.cloud-progress {
+    background-color: #A07AC9;
+}
+.storage-statistic-wrapper .info-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    z-index: 2;
+}
+.info-wrapper .left-wrapper {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-wrapper .percent-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    display: grid;
+    place-items: center;
+}
+.left-wrapper .percent-wrapper .percent {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.php-storage .percent-wrapper {
+    background-color: #A0E8CF;
+}
+.php-storage .percent {
+    background-color: #D7F8ED;
+}
+.cloud-storage .percent-wrapper {
+    background-color: #C7AAE7;
+}
+.cloud-storage .percent {
+    background-color: #EFE4FC;
+}
+
+.info-wrapper .right-wrapper {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.info-wrapper .right-wrapper .storage-title {
+    font-size: 12px;
+}
+.info-wrapper .right-wrapper .storage {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 7px;
+}
+
+
+/* App settings styles.............................................. */
+.app-setting-wrapper {
+    padding: 0 12px;
+}
+.app-setting-wrapper .text-wrapper {
+    font-size: 16px;
+    font-weight: bold;
+}
+.app-setting-wrapper .text-wrapper .sub-title {
+    margin-top: 2px;
+    font-size: 10px;
+    font-weight: lighter;
+}
+.app-setting-wrapper .setting-wrapper {
+    width: 100%;
+    height: 65px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 1px #DADADA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}

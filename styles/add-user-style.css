@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px auto;
+}
+nav i {
+    font-size: 22px;
+}
+nav i:last-child {
+    opacity: 0.8;
+}
+nav .title-wrapper {
+    font-size: 20px;
+    font-weight: bold;
+}
+#data {
+    margin-top: 40px;
+    padding: 0 15px;
+}
+#data input[type=file] {
+    display: none;
+}
+.profile-card {
+    width: 330px;
+    height: 350px;
+    margin: 0px auto;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 8px 1px #DADADA;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.profile-data-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+.profile-card i {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.profile-card .add-profile-text , .profile-card .add-profile-hint-text {
+    font-weight: bold;
+    opacity: 0.4;
+}
+.profile-card .add-profile-hint-text {
+    margin-top: 3px;
+    font-size: 10px;
+}
+#data .box-label {
+    margin: 30px 0 5px 0;
+    font-weight: 500;
+    opacity: 0.8;
+    display: block;
+    font-size: 14px;
+}
+#data .input-box {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #DADADA;
+    border-radius: 7px;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    user-select: none;
+    outline: none;
+    font-weight: 500;
+    color: #292929;
+    margin-bottom: 10px;
+}
+#data .input-box:focus {
+    border: 1px solid #909090;
+}
+
+#data .submit-button {
+    padding: 0px;
+    margin-top: 30px;
+    background-color: black;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
